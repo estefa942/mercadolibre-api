@@ -1,0 +1,15 @@
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    <img src="https://customers.twilio.com/wp-content/uploads/2018/08/MercadoLibreNew_WHT.png" width="150" height="40" alt="">
+  </a>
+  <form class="form-inline">
+    <input 
+    class="form-control mr-sm-2" 
+    type="search" 
+    placeholder="Search" 
+    aria-label="Search"
+    [(ngModel)]="search"
+    name="search">
+    <button class="btn btn-outline-warning my-2 my-sm-0" type="submit" (click)="getItems()">Search</button>
+  </form>
+</nav>

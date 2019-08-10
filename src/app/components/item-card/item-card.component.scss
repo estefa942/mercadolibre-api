@@ -1,0 +1,12 @@
+.card{
+    align-content: center;
+    align-items: center;
+    &-text{
+        text-align: center;
+        
+    }
+}
+.price{
+    color: #ffc107;
+    font-weight: bold;
+}

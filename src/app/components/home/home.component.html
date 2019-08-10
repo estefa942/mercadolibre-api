@@ -1,0 +1,9 @@
+<app-search-bar (product)="getProduct($event)"></app-search-bar>
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-3" *ngFor = "let item of items" >
+      <app-item-card [item]= "item" ></app-item-card>
+    </div>
+  </div>
+</div>
+

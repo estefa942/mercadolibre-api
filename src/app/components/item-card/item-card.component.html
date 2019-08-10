@@ -1,0 +1,9 @@
+<div class="card" style="width: 18rem; height: 100%;">
+  <div style="width: 50%; height: 50%;">
+    <img [src]="item.thumbnail" class="card-img-top" alt="..." >
+  </div>  
+  <div class="card-body">
+    <p class="card-text">{{item.title}}</p>
+    <p class="card-text price">{{item.price | currency:"COP":"symbol"}}</p>
+  </div>
+</div>
