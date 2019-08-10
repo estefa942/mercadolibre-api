@@ -22,6 +22,14 @@ export class MercadolibreService {
   );
     
   }
+  
+  getSeller(sellerID: Number) {
+    return this.http.get(`https://api.mercadolibre.com/users/${sellerID}`)
+      .pipe(map(res => {
+        return res['nickname'];
+      }));
+  }
+  
 }
 
 
